@@ -40,16 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 - Hàm lấy thông tin **accessToken** và **Credential**
 
 ```swift
-import OnetimeVNPTSmartCAFramework
-
 func getAuthentication(viewController: UIViewController, callback: @escaping (SmartCAResult) -> Void) -> Void
 ```
 
 - Hàm xác nhận / hủy giao dịch chờ ký số
 
 ```swift
-import OnetimeVNPTSmartCAFramework
-
 func getWaitingTransaction(viewController: UIViewController, tranId: String, callback: @escaping (SmartCAResult) -> Void) -> Void
 ```
 
