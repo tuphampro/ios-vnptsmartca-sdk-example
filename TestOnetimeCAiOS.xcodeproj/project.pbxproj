@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3356F7EE27B9EEF500A3DC57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356F7ED27B9EEF500A3DC57 /* AppDelegate.swift */; };
+		3356F7F027B9EEF500A3DC57 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356F7EF27B9EEF500A3DC57 /* SceneDelegate.swift */; };
+		3356F7F227B9EEF500A3DC57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356F7F127B9EEF500A3DC57 /* ViewController.swift */; };
+		3356F7F527B9EEF500A3DC57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3356F7F327B9EEF500A3DC57 /* Main.storyboard */; };
+		3356F7F727B9EEF700A3DC57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3356F7F627B9EEF700A3DC57 /* Assets.xcassets */; };
+		3356F7FA27B9EEF700A3DC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3356F7F827B9EEF700A3DC57 /* LaunchScreen.storyboard */; };
+		3356F80227B9F4D900A3DC57 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356F80127B9F4D900A3DC57 /* Dialog.swift */; };
+		3356F8D127BA354500A3DC57 /* OnetimeVNPTSmartCAFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D027BA354500A3DC57 /* OnetimeVNPTSmartCAFramework.xcframework */; };
+		3356F8D227BA354500A3DC57 /* OnetimeVNPTSmartCAFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D027BA354500A3DC57 /* OnetimeVNPTSmartCAFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8E327BA356D00A3DC57 /* path_provider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D327BA356C00A3DC57 /* path_provider.xcframework */; };
+		3356F8E427BA356D00A3DC57 /* path_provider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D327BA356C00A3DC57 /* path_provider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8E527BA356D00A3DC57 /* syncfusion_flutter_pdfviewer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D427BA356C00A3DC57 /* syncfusion_flutter_pdfviewer.xcframework */; };
+		3356F8E627BA356D00A3DC57 /* syncfusion_flutter_pdfviewer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D427BA356C00A3DC57 /* syncfusion_flutter_pdfviewer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8E727BA356D00A3DC57 /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D527BA356C00A3DC57 /* FlutterPluginRegistrant.xcframework */; };
+		3356F8E927BA356D00A3DC57 /* flutter_jailbreak_detection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D627BA356C00A3DC57 /* flutter_jailbreak_detection.xcframework */; };
+		3356F8EA27BA356D00A3DC57 /* flutter_jailbreak_detection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D627BA356C00A3DC57 /* flutter_jailbreak_detection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8EB27BA356D00A3DC57 /* shared_preferences.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D727BA356C00A3DC57 /* shared_preferences.xcframework */; };
+		3356F8EC27BA356D00A3DC57 /* shared_preferences.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D727BA356C00A3DC57 /* shared_preferences.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8ED27BA356D00A3DC57 /* webview_flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D827BA356C00A3DC57 /* webview_flutter.xcframework */; };
+		3356F8EE27BA356D00A3DC57 /* webview_flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D827BA356C00A3DC57 /* webview_flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8EF27BA356D00A3DC57 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D927BA356C00A3DC57 /* Flutter.xcframework */; };
+		3356F8F027BA356D00A3DC57 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8D927BA356C00A3DC57 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8F127BA356D00A3DC57 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DA27BA356C00A3DC57 /* App.xcframework */; };
+		3356F8F227BA356D00A3DC57 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DA27BA356C00A3DC57 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8F327BA356D00A3DC57 /* flutter_secure_storage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DB27BA356C00A3DC57 /* flutter_secure_storage.xcframework */; };
+		3356F8F427BA356D00A3DC57 /* flutter_secure_storage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DB27BA356C00A3DC57 /* flutter_secure_storage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8F527BA356D00A3DC57 /* DTTJailbreakDetection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DC27BA356C00A3DC57 /* DTTJailbreakDetection.xcframework */; };
+		3356F8F627BA356D00A3DC57 /* DTTJailbreakDetection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DC27BA356C00A3DC57 /* DTTJailbreakDetection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8F727BA356D00A3DC57 /* connectivity_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DD27BA356C00A3DC57 /* connectivity_plus.xcframework */; };
+		3356F8F827BA356D00A3DC57 /* connectivity_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DD27BA356C00A3DC57 /* connectivity_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8F927BA356D00A3DC57 /* local_auth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DE27BA356C00A3DC57 /* local_auth.xcframework */; };
+		3356F8FA27BA356D00A3DC57 /* local_auth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DE27BA356C00A3DC57 /* local_auth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8FB27BA356D00A3DC57 /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DF27BA356C00A3DC57 /* Reachability.xcframework */; };
+		3356F8FC27BA356D00A3DC57 /* Reachability.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8DF27BA356C00A3DC57 /* Reachability.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8FD27BA356D00A3DC57 /* url_launcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8E027BA356D00A3DC57 /* url_launcher.xcframework */; };
+		3356F8FE27BA356D00A3DC57 /* url_launcher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8E027BA356D00A3DC57 /* url_launcher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F8FF27BA356D00A3DC57 /* package_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8E127BA356D00A3DC57 /* package_info_plus.xcframework */; };
+		3356F90027BA356D00A3DC57 /* package_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8E127BA356D00A3DC57 /* package_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F90127BA356D00A3DC57 /* device_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8E227BA356D00A3DC57 /* device_info_plus.xcframework */; };
+		3356F90227BA356D00A3DC57 /* device_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3356F8E227BA356D00A3DC57 /* device_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3356F90427BA386F00A3DC57 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3356F90327BA386F00A3DC57 /* Keyboard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3356F80727B9F50D00A3DC57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3356F8FE27BA356D00A3DC57 /* url_launcher.xcframework in Embed Frameworks */,
+				3356F8F627BA356D00A3DC57 /* DTTJailbreakDetection.xcframework in Embed Frameworks */,
+				3356F8F027BA356D00A3DC57 /* Flutter.xcframework in Embed Frameworks */,
+				3356F8EA27BA356D00A3DC57 /* flutter_jailbreak_detection.xcframework in Embed Frameworks */,
+				3356F8F227BA356D00A3DC57 /* App.xcframework in Embed Frameworks */,
+				3356F8E627BA356D00A3DC57 /* syncfusion_flutter_pdfviewer.xcframework in Embed Frameworks */,
+				3356F8D227BA354500A3DC57 /* OnetimeVNPTSmartCAFramework.xcframework in Embed Frameworks */,
+				3356F8F427BA356D00A3DC57 /* flutter_secure_storage.xcframework in Embed Frameworks */,
+				3356F8EC27BA356D00A3DC57 /* shared_preferences.xcframework in Embed Frameworks */,
+				3356F8FC27BA356D00A3DC57 /* Reachability.xcframework in Embed Frameworks */,
+				3356F8FA27BA356D00A3DC57 /* local_auth.xcframework in Embed Frameworks */,
+				3356F90227BA356D00A3DC57 /* device_info_plus.xcframework in Embed Frameworks */,
+				3356F8EE27BA356D00A3DC57 /* webview_flutter.xcframework in Embed Frameworks */,
+				3356F8F827BA356D00A3DC57 /* connectivity_plus.xcframework in Embed Frameworks */,
+				3356F90027BA356D00A3DC57 /* package_info_plus.xcframework in Embed Frameworks */,
+				3356F8E427BA356D00A3DC57 /* path_provider.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3356F7EA27B9EEF500A3DC57 /* TestOnetimeCAiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOnetimeCAiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3356F7ED27B9EEF500A3DC57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3356F7EF27B9EEF500A3DC57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3356F7F127B9EEF500A3DC57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3356F7F427B9EEF500A3DC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3356F7F627B9EEF700A3DC57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3356F7F927B9EEF700A3DC57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3356F7FB27B9EEF700A3DC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3356F80127B9F4D900A3DC57 /* Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		3356F8D027BA354500A3DC57 /* OnetimeVNPTSmartCAFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OnetimeVNPTSmartCAFramework.xcframework; path = ../../../../../../../Desktop/OnetimeVNPTSmartCAFramework.xcframework; sourceTree = "<group>"; };
+		3356F8D327BA356C00A3DC57 /* path_provider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = path_provider.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/path_provider.xcframework"; sourceTree = "<group>"; };
+		3356F8D427BA356C00A3DC57 /* syncfusion_flutter_pdfviewer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = syncfusion_flutter_pdfviewer.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/syncfusion_flutter_pdfviewer.xcframework"; sourceTree = "<group>"; };
+		3356F8D527BA356C00A3DC57 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/FlutterPluginRegistrant.xcframework"; sourceTree = "<group>"; };
+		3356F8D627BA356C00A3DC57 /* flutter_jailbreak_detection.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = flutter_jailbreak_detection.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/flutter_jailbreak_detection.xcframework"; sourceTree = "<group>"; };
+		3356F8D727BA356C00A3DC57 /* shared_preferences.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = shared_preferences.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/shared_preferences.xcframework"; sourceTree = "<group>"; };
+		3356F8D827BA356C00A3DC57 /* webview_flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = webview_flutter.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/webview_flutter.xcframework"; sourceTree = "<group>"; };
+		3356F8D927BA356C00A3DC57 /* Flutter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/Flutter.xcframework"; sourceTree = "<group>"; };
+		3356F8DA27BA356C00A3DC57 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/App.xcframework"; sourceTree = "<group>"; };
+		3356F8DB27BA356C00A3DC57 /* flutter_secure_storage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = flutter_secure_storage.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/flutter_secure_storage.xcframework"; sourceTree = "<group>"; };
+		3356F8DC27BA356C00A3DC57 /* DTTJailbreakDetection.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DTTJailbreakDetection.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/DTTJailbreakDetection.xcframework"; sourceTree = "<group>"; };
+		3356F8DD27BA356C00A3DC57 /* connectivity_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = connectivity_plus.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/connectivity_plus.xcframework"; sourceTree = "<group>"; };
+		3356F8DE27BA356C00A3DC57 /* local_auth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = local_auth.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/local_auth.xcframework"; sourceTree = "<group>"; };
+		3356F8DF27BA356C00A3DC57 /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/Reachability.xcframework"; sourceTree = "<group>"; };
+		3356F8E027BA356D00A3DC57 /* url_launcher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = url_launcher.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/url_launcher.xcframework"; sourceTree = "<group>"; };
+		3356F8E127BA356D00A3DC57 /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = package_info_plus.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/package_info_plus.xcframework"; sourceTree = "<group>"; };
+		3356F8E227BA356D00A3DC57 /* device_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = device_info_plus.xcframework; path = "../../mobile-smartca/eGOV.PM1.VNPTCASignService/host_vnpt_smartca_sdk/OnetimeVNPTSmartCAFramework/Flutter/Release/device_info_plus.xcframework"; sourceTree = "<group>"; };
+		3356F90327BA386F00A3DC57 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3356F7E727B9EEF500A3DC57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3356F8FD27BA356D00A3DC57 /* url_launcher.xcframework in Frameworks */,
+				3356F8F527BA356D00A3DC57 /* DTTJailbreakDetection.xcframework in Frameworks */,
+				3356F8EF27BA356D00A3DC57 /* Flutter.xcframework in Frameworks */,
+				3356F8E927BA356D00A3DC57 /* flutter_jailbreak_detection.xcframework in Frameworks */,
+				3356F8F127BA356D00A3DC57 /* App.xcframework in Frameworks */,
+				3356F8E527BA356D00A3DC57 /* syncfusion_flutter_pdfviewer.xcframework in Frameworks */,
+				3356F8D127BA354500A3DC57 /* OnetimeVNPTSmartCAFramework.xcframework in Frameworks */,
+				3356F8F327BA356D00A3DC57 /* flutter_secure_storage.xcframework in Frameworks */,
+				3356F8EB27BA356D00A3DC57 /* shared_preferences.xcframework in Frameworks */,
+				3356F8FB27BA356D00A3DC57 /* Reachability.xcframework in Frameworks */,
+				3356F8E727BA356D00A3DC57 /* FlutterPluginRegistrant.xcframework in Frameworks */,
+				3356F8F927BA356D00A3DC57 /* local_auth.xcframework in Frameworks */,
+				3356F90127BA356D00A3DC57 /* device_info_plus.xcframework in Frameworks */,
+				3356F8ED27BA356D00A3DC57 /* webview_flutter.xcframework in Frameworks */,
+				3356F8F727BA356D00A3DC57 /* connectivity_plus.xcframework in Frameworks */,
+				3356F8FF27BA356D00A3DC57 /* package_info_plus.xcframework in Frameworks */,
+				3356F8E327BA356D00A3DC57 /* path_provider.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3356F7E127B9EEF500A3DC57 = {
+			isa = PBXGroup;
+			children = (
+				3356F7EC27B9EEF500A3DC57 /* TestOnetimeCAiOS */,
+				3356F7EB27B9EEF500A3DC57 /* Products */,
+				3356F8CF27BA354500A3DC57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3356F7EB27B9EEF500A3DC57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3356F7EA27B9EEF500A3DC57 /* TestOnetimeCAiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3356F7EC27B9EEF500A3DC57 /* TestOnetimeCAiOS */ = {
+			isa = PBXGroup;
+			children = (
+				3356F7ED27B9EEF500A3DC57 /* AppDelegate.swift */,
+				3356F7EF27B9EEF500A3DC57 /* SceneDelegate.swift */,
+				3356F7F127B9EEF500A3DC57 /* ViewController.swift */,
+				3356F7F327B9EEF500A3DC57 /* Main.storyboard */,
+				3356F7F627B9EEF700A3DC57 /* Assets.xcassets */,
+				3356F7F827B9EEF700A3DC57 /* LaunchScreen.storyboard */,
+				3356F7FB27B9EEF700A3DC57 /* Info.plist */,
+				3356F80127B9F4D900A3DC57 /* Dialog.swift */,
+				3356F90327BA386F00A3DC57 /* Keyboard.swift */,
+			);
+			path = TestOnetimeCAiOS;
+			sourceTree = "<group>";
+		};
+		3356F8CF27BA354500A3DC57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3356F8DA27BA356C00A3DC57 /* App.xcframework */,
+				3356F8DD27BA356C00A3DC57 /* connectivity_plus.xcframework */,
+				3356F8E227BA356D00A3DC57 /* device_info_plus.xcframework */,
+				3356F8DC27BA356C00A3DC57 /* DTTJailbreakDetection.xcframework */,
+				3356F8D627BA356C00A3DC57 /* flutter_jailbreak_detection.xcframework */,
+				3356F8DB27BA356C00A3DC57 /* flutter_secure_storage.xcframework */,
+				3356F8D927BA356C00A3DC57 /* Flutter.xcframework */,
+				3356F8D527BA356C00A3DC57 /* FlutterPluginRegistrant.xcframework */,
+				3356F8DE27BA356C00A3DC57 /* local_auth.xcframework */,
+				3356F8E127BA356D00A3DC57 /* package_info_plus.xcframework */,
+				3356F8D327BA356C00A3DC57 /* path_provider.xcframework */,
+				3356F8DF27BA356C00A3DC57 /* Reachability.xcframework */,
+				3356F8D727BA356C00A3DC57 /* shared_preferences.xcframework */,
+				3356F8D427BA356C00A3DC57 /* syncfusion_flutter_pdfviewer.xcframework */,
+				3356F8E027BA356D00A3DC57 /* url_launcher.xcframework */,
+				3356F8D827BA356C00A3DC57 /* webview_flutter.xcframework */,
+				3356F8D027BA354500A3DC57 /* OnetimeVNPTSmartCAFramework.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3356F7E927B9EEF500A3DC57 /* TestOnetimeCAiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3356F7FE27B9EEF700A3DC57 /* Build configuration list for PBXNativeTarget "TestOnetimeCAiOS" */;
+			buildPhases = (
+				3356F7E627B9EEF500A3DC57 /* Sources */,
+				3356F7E727B9EEF500A3DC57 /* Frameworks */,
+				3356F7E827B9EEF500A3DC57 /* Resources */,
+				3356F80727B9F50D00A3DC57 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestOnetimeCAiOS;
+			productName = TestOnetimeCAiOS;
+			productReference = 3356F7EA27B9EEF500A3DC57 /* TestOnetimeCAiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3356F7E227B9EEF500A3DC57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3356F7E927B9EEF500A3DC57 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3356F7E527B9EEF500A3DC57 /* Build configuration list for PBXProject "TestOnetimeCAiOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3356F7E127B9EEF500A3DC57;
+			productRefGroup = 3356F7EB27B9EEF500A3DC57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3356F7E927B9EEF500A3DC57 /* TestOnetimeCAiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3356F7E827B9EEF500A3DC57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3356F7FA27B9EEF700A3DC57 /* LaunchScreen.storyboard in Resources */,
+				3356F7F727B9EEF700A3DC57 /* Assets.xcassets in Resources */,
+				3356F7F527B9EEF500A3DC57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3356F7E627B9EEF500A3DC57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3356F7F227B9EEF500A3DC57 /* ViewController.swift in Sources */,
+				3356F7EE27B9EEF500A3DC57 /* AppDelegate.swift in Sources */,
+				3356F90427BA386F00A3DC57 /* Keyboard.swift in Sources */,
+				3356F7F027B9EEF500A3DC57 /* SceneDelegate.swift in Sources */,
+				3356F80227B9F4D900A3DC57 /* Dialog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3356F7F327B9EEF500A3DC57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3356F7F427B9EEF500A3DC57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3356F7F827B9EEF700A3DC57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3356F7F927B9EEF700A3DC57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3356F7FC27B9EEF700A3DC57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3356F7FD27B9EEF700A3DC57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3356F7FF27B9EEF700A3DC57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = JPMH34L85K;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestOnetimeCAiOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vnpt.vnptkysoeidas.enterprise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3356F80027B9EEF700A3DC57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = JPMH34L85K;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestOnetimeCAiOS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vnpt.vnptkysoeidas.enterprise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Prov_eGov_com.vnpt.vnptkysoeidas.enterprise;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3356F7E527B9EEF500A3DC57 /* Build configuration list for PBXProject "TestOnetimeCAiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3356F7FC27B9EEF700A3DC57 /* Debug */,
+				3356F7FD27B9EEF700A3DC57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3356F7FE27B9EEF700A3DC57 /* Build configuration list for PBXNativeTarget "TestOnetimeCAiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3356F7FF27B9EEF700A3DC57 /* Debug */,
+				3356F80027B9EEF700A3DC57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3356F7E227B9EEF500A3DC57 /* Project object */;
+}
