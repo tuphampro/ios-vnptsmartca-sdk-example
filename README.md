@@ -23,7 +23,7 @@ import OnetimeVNPTSmartCAFramework
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var onetimeCA: OnetimeVNPTSmartCA?; // Khởi tạo biến global để sử dụng ở những file khác trong Project.
-    var partnerId = "xxx-xxx-xxx-xxx"; // PartnerID được VNPTSmartCA cung cấp khi yêu cầu tích hợp.
+    var partnerId: String = "xxx-xxx-xxx-xxx"; // PartnerID được VNPTSmartCA cung cấp khi yêu cầu tích hợp.
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.onetimeCA = OnetimeVNPTSmartCA(
