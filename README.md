@@ -21,14 +21,14 @@
 import OnetimeVNPTSmartCAFramework
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var onetimeCA: OnetimeVNPTSmartCA?;
-    var partnerId = "xxx-xxx-xxx-xxx"; // PartnerID được VNPTSmartCA cung cấp khi yêu cầu tích hợp
+    var onetimeCA: OnetimeVNPTSmartCA?; // Khởi tạo biến global để sử dụng ở những file khác trong Project.
+    var partnerId = "xxx-xxx-xxx-xxx"; // PartnerID được VNPTSmartCA cung cấp khi yêu cầu tích hợp.
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.onetimeCA = OnetimeVNPTSmartCA(
-            environment: OnetimeVNPTSmartCA.ENVIRONMENT.DEMO,
+            environment: OnetimeVNPTSmartCA.ENVIRONMENT.DEMO, // Có 2 môi trường được cung cấp đó là DEMO và PRODUCTION.
             partnerId: self.partnerId,
-            lang: OnetimeVNPTSmartCA.LANG.VI);
+            lang: OnetimeVNPTSmartCA.LANG.VI); // Có 2 ngôn ngữ được hỗ trợ đó là: VI: Tiếng Việt và EN: Tiếng Anh.
         return true
     }
 }
@@ -43,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // SDK tự động xử lý các trường hợp về token: Hết hạn, chưa kích hoạt...
         (UIApplication.shared.delegate as! AppDelegate).onetimeCA?.getAuthentication(viewController: self, callback: {authResult in
             if authResult.status == SmartCAResultCode.SUCCESS_CODE {
+              // Hàm showDialog được viết sẵn trong file Dialog.swift trong Project mẫu.
                 self.showDialog(title: "Đã kích hoạt thành công", message: "\(authResult.data)");
             } else {
                 // SDK tự động hiển thị giao diện
@@ -55,11 +56,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ```swift
 @objc func getWaitingTransaction() {
-        if self.txtTranID.text != "" {
-            self.tranId = self.txtTranID.text!;
-            (UIApplication.shared.delegate as! AppDelegate).onetimeCA?.getAuthentication(viewController: self, callback: { authResult in
+        (UIApplication.shared.delegate as! AppDelegate).onetimeCA?.getAuthentication(viewController: self, callback: { authResult in
                 if authResult.status == SmartCAResultCode.SUCCESS_CODE {
-                    (UIApplication.shared.delegate as! AppDelegate).onetimeCA?.getWaitingTransaction(viewController: self, tranId: self.tranId, callback: { wtResult in
+                    (UIApplication.shared.delegate as! AppDelegate).onetimeCA?.getWaitingTransaction(viewController: self, tranId: "xxx-xxx-xxx", callback: { wtResult in // tranId: Được lấy sau khi tạo giao dịch từ Web Portal
                         if wtResult.status == SmartCAResultCode.SUCCESS_CODE {
                             print("Giao dịch thành công: \(wtResult.status) - \(wtResult.statusDesc) - \(wtResult.data)");
                         } else {
@@ -70,9 +69,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     // SDK tự động hiển thị giao diện
                 }
             });
-        } else {
-            self.showDialog(title: "Có lỗi xảy ra", message: "Vui lòng điền TranID");
-        }
         
     }
 ```
