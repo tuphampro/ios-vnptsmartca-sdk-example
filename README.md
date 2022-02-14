@@ -15,10 +15,11 @@
 
 ### Các bước cấu hình
 
-**Bước 1:** Khởi tạo SDK
+**Bước 1:** Khởi tạo SDK trong file AppDelegate.swift
 
 ```swift
 import OnetimeVNPTSmartCAFramework
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var onetimeCA: OnetimeVNPTSmartCA?; // Khởi tạo biến global để sử dụng ở những file khác trong Project.
@@ -36,42 +37,75 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 **Bước 2:** Sử dụng các hàm cơ bản
 
-- Hàm lấy thông tin accessToken và Credential
+- Hàm lấy thông tin **accessToken** và **Credential**
 
 ```swift
-@objc func getAuthentication() {
-        // SDK tự động xử lý các trường hợp về token: Hết hạn, chưa kích hoạt...
-        (UIApplication.shared.delegate as! AppDelegate).onetimeCA?.getAuthentication(viewController: self, callback: {authResult in
-            if authResult.status == SmartCAResultCode.SUCCESS_CODE {
-              // Hàm showDialog được viết sẵn trong file Dialog.swift trong Project mẫu.
-                self.showDialog(title: "Đã kích hoạt thành công", message: "\(authResult.data)");
-            } else {
-                // SDK tự động hiển thị giao diện
-            }
-        });
-    }
+import OnetimeVNPTSmartCAFramework
+
+func getAuthentication(viewController: UIViewController, callback: @escaping (SmartCAResult) -> Void) -> Void
 ```
 
 - Hàm xác nhận / hủy giao dịch chờ ký số
 
 ```swift
-@objc func getWaitingTransaction() {
-        (UIApplication.shared.delegate as! AppDelegate).onetimeCA?.getAuthentication(viewController: self, callback: { authResult in
-                if authResult.status == SmartCAResultCode.SUCCESS_CODE {
-                    (UIApplication.shared.delegate as! AppDelegate).onetimeCA?.getWaitingTransaction(viewController: self, tranId: "xxx-xxx-xxx", callback: { wtResult in // tranId: Được lấy sau khi tạo giao dịch từ Web Portal
-                        if wtResult.status == SmartCAResultCode.SUCCESS_CODE {
-                            print("Giao dịch thành công: \(wtResult.status) - \(wtResult.statusDesc) - \(wtResult.data)");
-                        } else {
-                            print("Lỗi giao dịch: \(wtResult.status) - \(wtResult.statusDesc) - \(wtResult.data)");
-                        }
-                    });
-                } else {
-                    // SDK tự động hiển thị giao diện
-                }
-            });
-        
-    }
+import OnetimeVNPTSmartCAFramework
+
+func getWaitingTransaction(viewController: UIViewController, tranId: String, callback: @escaping (SmartCAResult) -> Void) -> Void
 ```
+
+#### SmartCAResult
+
+| Tên        | Loại dữ liệu | Mô tả                               |
+|------------|--------------|-------------------------------------|
+| status     | Int          | Trạng thái của dữ liệu trả về       |
+| statusDesc | String       | Mô tả trạng thái của dữ liệu trả về |
+| data       | String       | Dữ liệu trả về                      |
+
+#### SmartCAResultCode
+
+| Tên                | Mã lỗi |
+|--------------------|--------|
+| UNKNOWN_ERROR_CODE | 2      |
+| USER_CANCEL_CODE   | 1      |
+| SUCCESS_CODE       | 0      |
+
+#### Giải thích các tham số sử dụng
+
+| Tham số  | Mô tả                                                                        |
+|----------|------------------------------------------------------------------------------|
+| tranId   | ID của giao dịch chờ ký số                                                   |
+| clientId | ID được VNPTSmartCA cung cấp khi yêu cầu tích hợp, được gửi kèm trong email. |
+
+#### Bảng mã trạng thái gửi về
+
+| Mã    | Mô tả                                      |
+|-------|--------------------------------------------|
+| 0     | Success                                    |
+| 1     | User rejected                              |
+| 2     | Unknown error                              |
+| 3     | Device not found                           |
+| 4     | Can not sign key challenge                 |
+| 5     | PIN fail count                             |
+| 6     | KAK Not found                              |
+| 7     | PIN Not found                              |
+| 8     | Token expired                              |
+| 30000 | Client not found in system                 |
+| 60000 | Credential not exist                       |
+| 60001 | Credential not match identity              |
+| 60002 | Credential no result                       |
+| 60003 | Credential status invalid                  |
+| 61000 | Credential assign key failed               |
+| 62000 | Signature transaction not found            |
+| 62001 | Signature transaction not match identity   |
+| 62002 | Signature transaction expired              |
+| 62003 | Signature transaction not waiting          |
+| 62010 | Signature data request invalid format      |
+| 63000 | Credential sign signer authen failed       |
+| 63001 | Credential sign init hash signer failed    |
+| 63002 | Credential sign file upload failed         |
+| 64000 | Credential sign file not support file type |
+| 64001 | Credential acceptance generate file failed |
+| 64002 | Credential acceptance transaction exist    |
 
 ## Tác giả
 
