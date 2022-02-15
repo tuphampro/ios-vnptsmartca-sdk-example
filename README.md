@@ -36,6 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ```
 
 **Bước 2:** Sử dụng các hàm cơ bản
+*Lưu ý:* Trước khi gọi hàm **getWaitingTransaction**, cần phải gọi hàm **getAuthentication** thành công với SUCCESS_CODE = 0.
 
 - Hàm lấy thông tin **accessToken** và **Credential**
 
