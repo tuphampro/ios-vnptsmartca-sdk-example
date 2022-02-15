@@ -15,7 +15,7 @@
 
 ### Các bước cấu hình
 
-**Bước 1:** Khởi tạo SDK trong file AppDelegate.swift
+**Bước 1:** Khởi tạo SDK tại chỗ muốn kết nối
 
 ```swift
 import OnetimeVNPTSmartCAFramework
@@ -49,6 +49,12 @@ func getAuthentication(viewController: UIViewController, callback: @escaping (Sm
 
 ```swift
 func getWaitingTransaction(viewController: UIViewController, tranId: String, callback: @escaping (SmartCAResult) -> Void) -> Void
+```
+
+- Hàm hủy bỏ context mà flutterEngine đang chạy
+
+```swift
+func destroySDK() -> Void
 ```
 
 #### SmartCAResult
