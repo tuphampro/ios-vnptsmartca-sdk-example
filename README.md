@@ -5,7 +5,7 @@
 ## Yêu cầu
 
 - VNPT OnetimeCA iOS SDK được thiết kế để chạy tốt với iOS phiên bản **9.0** trở lên.
-- Tải toàn bộ **XCFrameworks** từ link sau: <https://www.dropbox.com/s/7qbj5yl90awxj9c/OnetimeCAFrameworks.zip?dl=1>
+- Tải phiên bản SDK mới nhất từ link sau: <https://github.com/VNPTSmartCA/ios_onetimeca_sdk/releases> (tải file có định dạng OnetimeCAFrameworks_vx.x.x.zip)
 - Cấu hình tại **Targets Project** -> **Build Settings** -> **Build Options** -> **Enable Bitcode**, chuyển từ **Yes** -> **No**
 
 ### Cài đặt
