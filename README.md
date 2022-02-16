@@ -121,4 +121,4 @@ VNPT SmartCA Development Team
 
 ## Liên hệ - Hỗ trợ
 
-email: hoangdinhoi@vnpt.vn
+email: smartca.vnptit@gmail.com
