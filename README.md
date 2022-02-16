@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-**Bước 2:** Sử dụng các hàm cơ bản
+**Bước 2:** Sử dụng các hàm chính
 * Kích hoạt tài khoản/lấy thông tin xác thực người dùng (accessToken và credentialId)
 * Xác nhận giao dịch ký số
 
