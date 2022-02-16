@@ -50,7 +50,7 @@ func getAuthentication(viewController: UIViewController, callback: @escaping (Sm
 
 **2.2 Xác nhận giao dịch:**
 
-Sau khi lấy được **accessToken** và **credentialId** của người dùng từ **getAuthentication** Đối tác tích hợp tạo giao dịch ký số cho khách hàng, lấy **transId** sau đó gọi hàm xác nhận ký số **getWaitingTransaction** như sau:
+Sau khi lấy được **accessToken** và **credentialId** của người dùng từ **getAuthentication** Đối tác tích hợp tạo giao dịch ký số cho khách hàng, lấy **transId** sau đó gọi hàm xác nhận ký số **getWaitingTransaction**:
 
 
 ```swift
