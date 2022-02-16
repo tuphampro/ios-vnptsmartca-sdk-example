@@ -36,22 +36,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ```
 
 **Bước 2:** Sử dụng các hàm cơ bản
+* Kích hoạt tài khoản/lấy thông tin xác thực người dùng (accessToken và credentialId)
+* Xác nhận giao dịch ký số
 
-**Lưu ý:** Trước khi gọi hàm **getWaitingTransaction**, cần phải gọi hàm **getAuthentication** thành công với SUCCESS_CODE = 0.
+**2.1 Kích hoạt tài khoản/lấy accessToken và credentialId của người dùng:**
 
-- Hàm lấy thông tin **accessToken** và **Credential**
+SDK sẽ thực hiện kiểm tra trạng thái tài khoản và chứng thư của khách hàng như: đã kích hoạt hay chưa, chứng thư hợp lệ hay không, tự động làm mới token khi hết hạn,.... Thành công SDK sẽ trả về **accessToken** và **credentialId** của người dùng. 
 
 ```swift
 func getAuthentication(viewController: UIViewController, callback: @escaping (SmartCAResult) -> Void) -> Void
 ```
 
-- Hàm xác nhận / hủy giao dịch chờ ký số
+
+**2.2 Xác nhận giao dịch:**
+
+Sau khi lấy được **accessToken** và **credentialId** của người dùng từ **getAuthentication** Đối tác tích hợp tạo giao dịch ký số cho khách hàng, lấy **transId** sau đó gọi hàm xác nhận ký số **getWaitingTransaction** như sau:
+
 
 ```swift
 func getWaitingTransaction(viewController: UIViewController, tranId: String, callback: @escaping (SmartCAResult) -> Void) -> Void
 ```
 
-- Hàm hủy bỏ context mà flutterEngine đang chạy
+**2.3 Hủy kết nối với SDK:**
 
 ```swift
 func destroySDK() -> Void
