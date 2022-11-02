@@ -1,4 +1,4 @@
-# Source code mẫu và hướng dẫn tích hợp OnetimeCA của VNPTSmartCA
+# Source code mẫu và hướng dẫn tích hợp VNPTSmartCA SDK
 
 Đối với Project mẫu, clone repository và khởi chạy.
 
