@@ -1,6 +1,7 @@
 # Source code mẫu và hướng dẫn tích hợp VNPTSmartCA SDK
 
 Đối với Project mẫu, clone repository và khởi chạy.
+
 Chi tiết hướng dẫn xem [tại đây](https://smartca.vnpt.vn/help/docs/sdks/sdk/intro)
 
 ## Tác giả
